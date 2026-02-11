@@ -90,7 +90,7 @@ export function GapQuestionCard({
               disabled={isLoading}
             >
               <XCircle className="h-5 w-5 mr-2 text-muted-foreground" />
-              No, I don't
+              No, I don&apos;t
             </Button>
           </div>
         )}
@@ -119,10 +119,10 @@ export function GapQuestionCard({
               <Lightbulb className="h-5 w-5 text-blue-600 shrink-0 mt-0.5" />
               <div>
                 <p className="text-sm font-medium text-blue-900">
-                  No problem! Here's my strategy:
+                  No problem! Here&apos;s my strategy:
                 </p>
                 <p className="text-sm text-blue-800 mt-1">
-                  I'll emphasize your transferable skills and existing experience that demonstrate
+                  I&apos;ll emphasize your transferable skills and existing experience that demonstrate
                   similar capabilities. Your resume will still be optimized for this role.
                 </p>
               </div>

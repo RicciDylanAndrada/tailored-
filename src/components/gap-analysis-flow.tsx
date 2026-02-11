@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
 import { GapQuestionCard } from '@/components/gap-question-card';
-import type { GapQuestion, GapAnswer, GapAnalysisResult, JobData } from '@/lib/types';
+import type { GapAnswer, GapAnalysisResult, JobData } from '@/lib/types';
 
 interface GapAnalysisFlowProps {
   resumeContent: string;
@@ -127,7 +127,7 @@ export function GapAnalysisFlow({
           <CheckCircle2 className="h-12 w-12 mx-auto text-green-600" />
           <h3 className="text-lg font-semibold mt-4">Great Match!</h3>
           <p className="text-muted-foreground mt-2">
-            Your resume already covers the key requirements. Let's tailor it!
+            Your resume already covers the key requirements. Let&apos;s tailor it!
           </p>
           {analysisResult && analysisResult.matchedSkills.length > 0 && (
             <div className="flex flex-wrap gap-2 justify-center mt-4">
@@ -186,6 +186,7 @@ export function GapAnalysisFlow({
 
         {/* Question Card */}
         <GapQuestionCard
+          key={currentQuestion.id}
           question={currentQuestion}
           questionNumber={currentQuestionIndex + 1}
           totalQuestions={analysisResult.gaps.length}
